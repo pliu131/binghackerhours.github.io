@@ -8,6 +8,25 @@
   width: 100%;
 }
 
+.btn {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 0 0 #095E47;
+  color: white;
+  background-color: #159170;
+  border: none;
+  border-radius: 0.3rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  top: 3px;
+  box-shadow: none;
+}
+
 .home-header-image {
   @include bg-image-box('/images/unsplash_open_macbook.jpg');
   @include v-align-container;
