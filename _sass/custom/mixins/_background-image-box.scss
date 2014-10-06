@@ -1,0 +1,9 @@
+@mixin bg-image-box($url, $height: 100%) {
+  background-image: url($url);
+  background-color: gray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: $height;
+  width: 100%;
+}  

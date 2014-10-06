@@ -1,23 +1,37 @@
 ---
 layout: default
 ---
+<header class="home-header-image">
+  
+  <section class="image-overlay"></section>
 
-<div class="home">
+  <!-- Inline style because vertical align won't work without it -->
+  <section style="position:relative">
+    <h1>Hacker Hours</h1>
+    <h2>Office Hours for Programming Help</h2>
+    <p><small>Brought to you by Binghamton ACM and HackBU</small></p>
+  </section>
+  
+</header>
 
-  <h1 class="page-heading">Posts</h1>
+<main class="home-content">
+  <header>
+    <section>
+      <h1>Thursdays Nights, 7:00PM to 8:00PM</h1>
+      <h2>Located in Academic A G008, Before HackBU Workshops</h2>
+    </section>
+  </header>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section>
+    <article>
+      <h2>What are Hacker Hours?</h2>
+      <p>Hacker Hours is a completely open space for people to receive programming help, work on homework or projects, or to just hang out and talk with other like-minded people. We're a community of programmers, developers, and designers, focused on helping you learn to code and get better and what you do.</p>
+    </article>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <article>
+      <h2>This sounds awesome! How do I get involved?</h2>
+      <p>We're always looking for people to become mentors and speakers for our lightning talks! If you have expertise in any programming languages and enjoy helping others learn, or have any awesome projects or technologies you would love to speak about, please get in touch with us here.</p>
+    </article>
+  </section>
+</main>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
