@@ -47,6 +47,7 @@
     background-repeat: repeat;
     
     section {
+      @include make-row;
       @include v-align-element;
       text-align: center;
 
@@ -61,9 +62,10 @@
   }
 
   > section {
-    @include make-row;
+    overflow: hidden;
     background-image: url(/images/stardust_@2X.png);
     background-repeat: repeat;
+
 
     @media (min-width: $screen-md) {
       height: 50%;
@@ -77,6 +79,7 @@
       color: white;
       margin-top: 3rem;
       margin-bottom: 3rem;
+      width: auto;
 
       h2 {
         font-size: 2rem;
