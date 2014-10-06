@@ -5,6 +5,7 @@
   @include full-screen(absolute);
   background-color: rgba(0,0,0,0.3);
   height: 95%;
+  width: 100%;
 }
 
 .home-header-image {
@@ -35,6 +36,8 @@
 .home-content {
   @include container-fixed;
   @include full-screen;
+  padding-left: 0;
+  padding-right: 0;
 
   header {
     @include v-align-container;
