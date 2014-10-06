@@ -30,21 +30,46 @@
   @include container-fixed;
   @include full-screen;
 
+  header {
+    @include v-align-container;
+    height: 50%;
+    width: 100%;      
+    
+    section {
+      @include v-align-element;
+      text-align: center;
+    }
+  }
+
   section {
     @include make-row;
-    height: 80%;
+    height: 50%;
 
     article {
       @include make-xs-column(12);
-      @include make-sm-column(4);
-      @include make-md-column(4);
-      @include make-lg-column(4);
+      @include make-sm-column(5);
+      @include make-md-column(5);
+      @include make-lg-column(5);
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    article:first-child {
+      @include make-sm-column-offset(1);
+      @include make-md-column-offset(1);
+      @include make-lg-column-offset(1);
     }
   }
 
   footer {
     @include make-row;
-    height: 20%;
+    height: 15%;
 
     section:first-child {
       @include make-xs-column(12);
