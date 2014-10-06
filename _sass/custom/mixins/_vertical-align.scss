@@ -1,0 +1,8 @@
+@mixin v-align-container {
+  display: table;
+}
+
+@mixin v-align-element {
+  display: table-cell;
+  vertical-align: middle;
+}

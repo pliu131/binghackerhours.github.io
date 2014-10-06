@@ -1,0 +1,63 @@
+@import "bootstrap";
+@import "custom/mixins";
+
+.image-overlay {
+  @include full-screen(absolute);
+  background-color: rgba(0,0,0,0.3);
+}
+
+.home-header-image {
+  @include bg-image-box('/images/unsplash_open_macbook.jpg');
+  @include v-align-container;
+  background-attachment: fixed;
+
+  section {
+    @include v-align-element;
+    color: white;
+    text-align: center;
+    
+    h1 {
+      font-size: 7.2rem;      
+    }
+    
+    p {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.home-content {
+  @include container-fixed;
+  @include full-screen;
+
+  section {
+    @include make-row;
+    height: 80%;
+
+    article {
+      @include make-xs-column(12);
+      @include make-sm-column(4);
+      @include make-md-column(4);
+      @include make-lg-column(4);
+    }
+  }
+
+  footer {
+    @include make-row;
+    height: 20%;
+
+    section:first-child {
+      @include make-xs-column(12);
+      @include make-sm-column(8);
+      @include make-md-column(8);
+      @include make-lg-column(8); 
+    }
+
+    section:last-child {
+      @include make-xs-column(12);
+      @include make-sm-column(4);
+      @include make-md-column(4);
+      @include make-lg-column(4); 
+    }
+  }
+}
